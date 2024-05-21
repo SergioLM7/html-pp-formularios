@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los formularios de Entrepenes</title>
+</head>
+<body>
+    <form id="viejuner">
+        <h2>El club viejuner</h2>
+        <fieldset id="tu">
+            <legend id="tu">Tú</legend>
+            <br>
+            <label id="nombre">Nombre:<input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" autofocus required/></label>
+            <br>
+            <br>
+            <label id="apellido">Apellidos:<input type="text" id="apellido" name="apellido" placeholder="Introduce tus dos apellidos" required/></label>
+            <br>
+            <br>
+            <label id="edad">Edad:<input type="number" id="edad" name="edad" placeholder="Introduce tu edad" required/></label>
+            <br>
+            <br>
+            <label id="sexo">Sexo:
+                <div><input type="radio" id="hombre" name="sexo" value="hombre" required/>Hombre</div>
+                <div><input type="radio" id="mujer" name="sexo" value="mujer" required/>Mujer</div>
+                <div><input type="radio" id="noBinario" name="sexo" value="noBinario" required/>No binario</div>
+            </label>
+            <br>
+            <label id="viejuner">Me siento viejuner:
+                <input type="checkbox" id="viejuner" name="viejuner" value="si" />
+            </label>
+            <br>
+            <br>
+            <label id="comentarios">
+                <textarea name="comentarios" id="comentarios" rows="5" cols="30" placeholder="Escribe tus comentarios" spellcheck="true" required></textarea>
+            </label>
+        </fieldset>
+        <br>
+        <fieldset id="circunstancias">
+            <legend id="circunstancias">Tus circunstancias</legend>
+            <label id="correo">Email:
+            <input type="email" id="correo" name="correo" placeholder="Escribe tu email" />
+            </label>
+            <br>
+            <br>
+            <label id="telefono">Teléfono:
+            <input type ="tel" id="telefono" name="telefono" placeholder="Escribe tu móvil" />
+            </label>
+        </fieldset>
+        <br>
+        <button type="submit" id="boton_submit" name="enviar" value="enviar">Enviar</button>
+        <button type="reset" id="boton_reset" name="boton_reset">Limpiar</button>
+        <br>
+        <br>
+    </form>
+    <hr>
+    <form id="policia">
+        <h2>Los ladronzuelos de bicicletas</h2>
+        <fieldset id="datos_ladron">
+            <legend id="datos_ladron">Día y hora</legend>
+            <label id="dia">Día del suceso:<input type="date" id="dia" name="dia" /></label>
+            <br>
+            <br>
+            <label id="hora">Hora del suceso:<input type="time" id="hora" name="hora" /></label>
+        </fieldset>
+        <fieldset id="datos_bicicleta">
+            <legend id="datos_bicicleta">Datos de la bicicleta</legend>
+            <label id="rango">Rango de precio:<input type="range" id="rango" name="rango" max="3000" min="200" step="200" value="500"/></label>
+            <br>
+            <br>
+            <label id="tipo_bici">Tipo de bicicleta:
+                <select id="tipo_bici" required>
+                    <optgroup label="Paseo">
+                        <option value="">--Selecciona una opción--</option>
+                        <option value="señorial">Señorial</option>
+                        <option value="antiPlebeyos">Anti-plebeyos</option>
+                        <option value="encimaHombro">PorEncimaDelHombro</option>
+                    </optgroup>
+                    <optgroup label="Montaña">
+                        <option value="gamusinos">Gamusinos</option>
+                        <option value="hueleflores">Hueleflores premium</option>
+                        <option value="fango">Fango lover</option>
+                    </optgroup>
+                    <optgroup label="Carretera">
+                        <option value="metroymedio">Metroymedio</option>
+                        <option value="fluorescente">3 de la tarde. Fluorescente edition</option>
+                        <option value="grupitors">Grupitors</option>
+                    </optgroup>
+                </select>
+            </label>
+            <br>
+            <br>
+            <label id="accesorios">Accesorios de la bicicleta:
+                <select id="accesorios" multiple required>
+                    <option value="ruedines">Ruedines</option>
+                    <option value="pegatinas">Pegatinas</option>
+                    <option value="cestita">Cestita</option>                    
+                    <option value="bomba">Bomba de aire</option>
+                    <option value="timbre">Timbre</option>
+                    <option value="foco">Foco</option>
+                </select>
+            </label>
+            <br>
+            <br>
+            <label id="marca">¿Qué marca era?:
+                <input list="marcaBici" id="marca" name="marca" />
+            </label>
+            <datalist id="marcaBici">
+                <option value="specialized"></option>
+                <option value="trek"></option>
+                <option value="merida"></option>
+                <option value="scott"></option>
+                <option value="giant"></option>
+                <option value="cube"></option>
+                <option value="lapierre"></option>
+                <option value="orbea"></option>
+                <option value="cannondale"></option>
+            </datalist>
+        </fieldset>
+        <br>
+        <button type="submit" id="submit_policia" name="submit_policia" value="enviar">Enviar</button>
+        <button type="reset" id="reste_policia" name="reset_policia">Limpiar</button>
+    </form>
+</body>
+</html>
